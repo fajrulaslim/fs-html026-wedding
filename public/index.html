@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=The+Nautigal&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=The+Nautigal&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="fonts/fontawesome-free-6.0.0-web//css/all.min.css">
 
@@ -16,21 +19,77 @@
 
     <title>The Wedding of Ana & Dilan - Possible Wedding</title>
 </head>
+
 <body>
-    
-    <section class="bg-brown-200 w-full h-screen flex items-center justify-center">
-        <div class="container">
+
+    <section class="bg-brown-200 w-full h-screen flex items-center justify-center relative" >
+        <div class="absolute top-0 left-0 w-full h-screen bg-no-repeat bg-cover bg-center opacity-10" style="background-image: url(./images/background/header.jpg);"></div>
+        <img src="images/background/header-bottom-right.png" alt="background" class="absolute bottom-0 right-0 w-[300px] h-[310px]">
+        <img src="images/background/header-top-left.png" alt="background" class="absolute top-0 left-0 opacity-20 w-[300px] h-[310px]">
+        <div class="container relative">
             <div class="text-center">
                 <div class="font-cormorant text-normal text-brown-500 mb-2.5 font-normal">The Wedding of</div>
-                <div class="font-nautigal text-9xl text-brown-500 mb-3.5 italic">Ana & Dilan</div>
+                <h1 class="font-nautigal text-9xl text-brown-500 mb-3.5 italic">Ana & Dilan</h1>
                 <div class="font-cormorant text-normal text-brown-500 mb-2.5 font-normal">Minggu, 3 Juli 2023</div>
                 <div class="h-40"></div>
                 <div class="font-cormorant text-normal text-brown-500 mb-2.5 font-normal">Kepada Yth</div>
                 <div class="font-cormorant text-normal text-brown-500 mb-3 font-semibold">Damar</div>
-                <button class="font-cormorant text-button text-white bg-brown-500 py-2.5 px-7 rounded-lg border-2 border-brown-200 ring-1 ring-brown-500"><i class="fa-solid fa-envelope mr-2"></i> Buka Undangan</button>
+                <button
+                    class="font-cormorant text-button text-white bg-brown-500 py-2.5 px-7 rounded-lg border-2 border-brown-200 ring-1 ring-brown-500"><i
+                        class="fa-solid fa-envelope mr-2"></i> Buka Undangan</button>
             </div>
         </div>
     </section>
 
+    <section class="bg-brown-200 py-6 relative">
+        <img src="images/background/header-top-left.png" alt="background" class="absolute top-0 right-0 opacity-20 w-[300px] h-[310px] -scale-x-100">
+        <div class="container mx-auto px-20 relative">
+            <div class="columns-2">
+                <div class="p-0.5 border-2 border-brown-50" style="border-radius: 40px 100px 40px 100px">
+                    <div class="p-3 border-2 border-brown-50" style="border-radius: 40px 100px 40px 100px">
+                        <img src="images/photos/Foto-Ayat-Ana-Dilan.jpg" alt="" style="border-radius: 40px 100px 40px 100px">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="h-10"></div>
+                    <h1 class="font-nautigal text-7xl text-brown-500 mb-3.5 italic">The Promises</h1>
+                    <img src="images/border/border-flower-1.png" alt="" class="w-3/5 mx-auto mb-2.5" style="filter: invert(65%) sepia(8%) saturate(1357%) hue-rotate(349deg) brightness(88%) contrast(90%);">
+                    <p class="font-cormorant text-lg">
+                        "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan-pasangan dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.""
+                    </p>
+                    <p class="font-cormorant text-lg font-semibold">
+                        (QS Ar-Rum : 21)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button class="fixed bottom-10 left-10 bg-white rounded-full w-12 h-12 text-brown-300 text-2xl" onclick="setAudio()">
+        <i class="fa-solid fa-volume-low" id="iconAudio"></i>
+        <audio>
+            <source src="audio/backsound.mp3" />
+        </audio>
+    </button>
+
+
+    <script>
+        function setAudio() {
+            var audio = document.getElementsByTagName("audio")[0];
+            if (audio) {
+                if (audio.paused) {
+                    audio.play();
+                    document.getElementById("iconAudio").classList.remove("fa-volume-low")
+                    document.getElementById("iconAudio").classList.add("fa-volume-xmark")
+                } else {
+                    audio.pause();
+                    document.getElementById("iconAudio").classList.add("fa-volume-low")
+                    document.getElementById("iconAudio").classList.remove("fa-volume-xmark")
+                }
+            }
+        }
+    </script>
+
 </body>
+
 </html>
