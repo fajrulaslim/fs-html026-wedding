@@ -6,6 +6,8 @@ module.exports = {
       fontFamily: {
         cormorant: ['Cormorant Garamond'],
         nautigal: ['The Nautigal'],
+        grand: ['Grand Hotel'],
+        quicksand: ['Quicksand']
       },
       fontSize: {
         'button': ['13px'],
@@ -15,11 +17,17 @@ module.exports = {
       colors: {
         brown: {
           50: '#D0B17E',
+          70: '#EBEAE7',
           100: '#EADABF',
           200: '#EAE2DF',
+          250: '#EBEAE7',
           300: '#866D62',
           500: '#625757',
         }
+      },
+      borderRadius: {
+        50: '50px',
+        200: '200px',
       }
     },
   },
