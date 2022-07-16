@@ -9,6 +9,9 @@ module.exports = {
         grand: ['Grand Hotel'],
         quicksand: ['Quicksand']
       },
+      width: {
+        18: '70px'
+      },
       fontSize: {
         'button': ['13px'],
         'normal': ['22px', { lineHeight: '1em' }],
@@ -36,6 +39,9 @@ module.exports = {
         }
       },
       borderRadius: {
+        frame: '40px 100px 40px 100px',
+        20: '20px',
+        40: '40px',
         50: '50px',
         200: '200px',
       },
