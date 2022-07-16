@@ -182,119 +182,121 @@
             class="absolute top-0 left-0 w-[300px] h-[310px]">
     </section>
 
-    <section class="isi-undangan hidden bg-brown-200 w-full md:h-screen flex items-center justify-center relative">
-        <div class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-center opacity-30"
-            style="background-image: url(./images/background/header.jpg);"></div>
-        <div class="container max-w-screen-xl mx-auto p-20 relative">
-            <div class="columns-2">
-                <div class="relative">
-                    <img src="images/photos/Foto-Counting-Days-Ana-Dilan.jpg" class="rounded-3xl" alt="Photo">
-                    <div class="absolute bottom-5 left-2/4 -translate-x-2/4 flex">
-                        <div class="mx-1 bg-brown-300 py-5 w-28 text-center"
-                            style="border-radius: 10px 40px 10px 40px;">
-                            <div class="font-quicksand text-white text-5xl" id="days">00</div>
-                            <div class="font-quicksand text-base text-white">Days</div>
-                        </div>
-                        <div class="mx-1 bg-brown-300 py-5 w-28 text-center"
-                            style="border-radius: 10px 40px 10px 40px;">
-                            <div class="font-quicksand text-white text-5xl" id="hours">00</div>
-                            <div class="font-quicksand text-base text-white">Hours</div>
-                        </div>
-                        <div class="mx-1 bg-brown-300 py-5 w-28 text-center"
-                            style="border-radius: 10px 40px 10px 40px;">
-                            <div class="font-quicksand text-white text-5xl" id="minutes">00</div>
-                            <div class="font-quicksand text-base text-white">Minutes</div>
-                        </div>
-                        <div class="mx-1 bg-brown-300 py-5 w-28 text-center"
-                            style="border-radius: 10px 40px 10px 40px;">
-                            <div class="font-quicksand text-white text-5xl" id="seconds">00</div>
-                            <div class="font-quicksand text-base text-white">Seconds</div>
+    <div class="isi-undangan hidden">
+        <section class="bg-brown-200 w-full md:h-screen flex items-center justify-center relative">
+            <div class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-center opacity-30"
+                style="background-image: url(./images/background/header.jpg);"></div>
+            <div class="container max-w-screen-xl mx-auto p-20 relative">
+                <div class="columns-2">
+                    <div class="relative">
+                        <img src="images/photos/Foto-Counting-Days-Ana-Dilan.jpg" class="rounded-3xl" alt="Photo">
+                        <div class="absolute bottom-5 left-2/4 -translate-x-2/4 flex">
+                            <div class="mx-1 bg-brown-300 py-5 w-28 text-center"
+                                style="border-radius: 10px 40px 10px 40px;">
+                                <div class="font-quicksand text-white text-5xl" id="days">00</div>
+                                <div class="font-quicksand text-base text-white">Days</div>
+                            </div>
+                            <div class="mx-1 bg-brown-300 py-5 w-28 text-center"
+                                style="border-radius: 10px 40px 10px 40px;">
+                                <div class="font-quicksand text-white text-5xl" id="hours">00</div>
+                                <div class="font-quicksand text-base text-white">Hours</div>
+                            </div>
+                            <div class="mx-1 bg-brown-300 py-5 w-28 text-center"
+                                style="border-radius: 10px 40px 10px 40px;">
+                                <div class="font-quicksand text-white text-5xl" id="minutes">00</div>
+                                <div class="font-quicksand text-base text-white">Minutes</div>
+                            </div>
+                            <div class="mx-1 bg-brown-300 py-5 w-28 text-center"
+                                style="border-radius: 10px 40px 10px 40px;">
+                                <div class="font-quicksand text-white text-5xl" id="seconds">00</div>
+                                <div class="font-quicksand text-base text-white">Seconds</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="relative pt-14">
-                    <div class="-ml-10 p-0.5 border-2 border-brown-50 rounded-3xl h-full bg-white">
-                        <div class="p-5 border-2 border-brown-50 rounded-3xl bg-white relative overflow-hidden  h-full">
-                            <div class="h-20"></div>
-                            <form action="">
-                                <div class="text-center">
-                                    <h1 class="font-nautigal text-6xl text-brown-500 italic mb-7">
-                                        Reservasi
-                                    </h1>
-                                    <div class="h-px w-20 mx-auto bg-black mb-6"></div>
-                                    <p class="font-cormorant text-normal text-brown-500 mb-5 leading-8">
-                                        Untuk mencegah penyebaran virus COVID-19, kami mengharapkan konfirmasi
-                                        kedatangan Anda pada form berikut:
-                                    </p>
-                                </div>
-                                <div class="input-group font-cormorant text-base text-brown-500 mb-3">
-                                    <label for="nama">
-                                        Nama<sup class="text-rose-500">*</sup>
-                                    </label>
-                                    <input type="text" name="nama" id="nama"
-                                        class="block w-full bg-white rounded-3xl border border-neutral-400 text-neutral-600 mt-1 py-2 px-4 outline-none focus:border-neutral-600"
-                                        placeholder="Nama" required>
-                                </div>
-                                <div class="input-group font-cormorant text-base text-brown-500 mb-3">
-                                    <label for="ucapan">
-                                        Ucapan dan Doa<sup class="text-rose-500">*</sup>
-                                    </label>
-                                    <textarea name="ucapan" id="ucapan"
-                                        class="block w-full bg-white rounded-3xl border border-neutral-400 text-neutral-600 mt-1 py-2 px-4 outline-none focus:border-neutral-600"
-                                        placeholder="Ucapan dan Doa" rows="3" required></textarea>
-                                </div>
-                                <div class="input-group font-cormorant text-base text-brown-500 mb-3">
-                                    <label for="kehadiran">
-                                        Apakah Anda berkenan hadir?<sup class="text-rose-500">*</sup>
-                                    </label>
-                                    <div class="flex mt-2">
-                                        <div class="form-check mr-4">
-                                            <input class="form-check-input" type="radio" name="kehadiran"
-                                                id="kehadiran1" value="hadir" required>
-                                            <label class="cursor-pointer" for="kehadiran1">
-                                                Hadir
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="kehadiran"
-                                                id="kehadiran2" value="tidak">
-                                            <label class="cursor-pointer" for="kehadiran2">
-                                                Tidak Hadir
-                                            </label>
+                    <div class="relative pt-14">
+                        <div class="-ml-10 p-0.5 border-2 border-brown-50 rounded-3xl h-full bg-white">
+                            <div class="p-5 border-2 border-brown-50 rounded-3xl bg-white relative overflow-hidden  h-full">
+                                <div class="h-20"></div>
+                                <form action="">
+                                    <div class="text-center">
+                                        <h1 class="font-nautigal text-6xl text-brown-500 italic mb-7">
+                                            Reservasi
+                                        </h1>
+                                        <div class="h-px w-20 mx-auto bg-black mb-6"></div>
+                                        <p class="font-cormorant text-normal text-brown-500 mb-5 leading-8">
+                                            Untuk mencegah penyebaran virus COVID-19, kami mengharapkan konfirmasi
+                                            kedatangan Anda pada form berikut:
+                                        </p>
+                                    </div>
+                                    <div class="input-group font-cormorant text-base text-brown-500 mb-3">
+                                        <label for="nama">
+                                            Nama<sup class="text-rose-500">*</sup>
+                                        </label>
+                                        <input type="text" name="nama" id="nama"
+                                            class="block w-full bg-white rounded-3xl border border-neutral-400 text-neutral-600 mt-1 py-2 px-4 outline-none focus:border-neutral-600"
+                                            placeholder="Nama" required>
+                                    </div>
+                                    <div class="input-group font-cormorant text-base text-brown-500 mb-3">
+                                        <label for="ucapan">
+                                            Ucapan dan Doa<sup class="text-rose-500">*</sup>
+                                        </label>
+                                        <textarea name="ucapan" id="ucapan"
+                                            class="block w-full bg-white rounded-3xl border border-neutral-400 text-neutral-600 mt-1 py-2 px-4 outline-none focus:border-neutral-600"
+                                            placeholder="Ucapan dan Doa" rows="3" required></textarea>
+                                    </div>
+                                    <div class="input-group font-cormorant text-base text-brown-500 mb-3">
+                                        <label for="kehadiran">
+                                            Apakah Anda berkenan hadir?<sup class="text-rose-500">*</sup>
+                                        </label>
+                                        <div class="flex mt-2">
+                                            <div class="form-check mr-4">
+                                                <input class="form-check-input" type="radio" name="kehadiran"
+                                                    id="kehadiran1" value="hadir" required>
+                                                <label class="cursor-pointer" for="kehadiran1">
+                                                    Hadir
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="kehadiran"
+                                                    id="kehadiran2" value="tidak">
+                                                <label class="cursor-pointer" for="kehadiran2">
+                                                    Tidak Hadir
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="input-group font-cormorant text-base text-brown-500 mb-5">
-                                    <label for="jumlahTamu">
-                                        Jumlah Tamu
-                                    </label>
-                                    <div class="flex mt-2">
-                                        <div class="form-check mr-4">
-                                            <input class="form-check-input" type="radio" name="tamu" id="tamu1"
-                                                value="1" required>
-                                            <label class="cursor-pointer" for="tamu1">
-                                                1
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="tamu" id="tamu2"
-                                                value="2">
-                                            <label class="cursor-pointer" for="tamu2">
-                                                2
-                                            </label>
+                                    <div class="input-group font-cormorant text-base text-brown-500 mb-5">
+                                        <label for="jumlahTamu">
+                                            Jumlah Tamu
+                                        </label>
+                                        <div class="flex mt-2">
+                                            <div class="form-check mr-4">
+                                                <input class="form-check-input" type="radio" name="tamu" id="tamu1"
+                                                    value="1" required>
+                                                <label class="cursor-pointer" for="tamu1">
+                                                    1
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="tamu" id="tamu2"
+                                                    value="2">
+                                                <label class="cursor-pointer" for="tamu2">
+                                                    2
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <button type="submit"
-                                    class="font-cormorant text-base text-white bg-brown-500 py-2 rounded-3xl w-full">Kirim</button>
-                            </form>
-                            <div class="h-20"></div>
+                                    <button type="submit"
+                                        class="font-cormorant text-base text-white bg-brown-500 py-2 rounded-3xl w-full">Kirim</button>
+                                </form>
+                                <div class="h-20"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <section class="isi-undangan hidden bg-brown-200 py-14">
         <div class="container max-w-screen-xl mx-auto px-20 ">
@@ -524,21 +526,23 @@
         </div>
     </section>
 
-    <section class="isi-undangan hidden w-full h-screen flex items-end justify-center relative bg-no-repeat bg-cover bg-center"
-        style="background-image: url(./images/photos/Foto-Closing-Ana-Dilan.jpg);">
-        <div class="absolute top-0 left-0 w-full h-screen opacity-50"
-            style="background-image: linear-gradient(180deg, #FFFFFF00 0%, #171717 100%);"></div>
-        <div class="container relative mb-6">
-            <div class="text-center">
-                <div class="font-cormorant text-xl text-white mb-2.5 font-normal">
-                    See You on Our Big Day
+    <div class="isi-undangan hidden">
+        <section class="w-full h-screen flex items-end justify-center relative bg-no-repeat bg-cover bg-center"
+            style="background-image: url(./images/photos/Foto-Closing-Ana-Dilan.jpg);">
+            <div class="absolute top-0 left-0 w-full h-screen opacity-50"
+                style="background-image: linear-gradient(180deg, #FFFFFF00 0%, #171717 100%);"></div>
+            <div class="container relative mb-6">
+                <div class="text-center">
+                    <div class="font-cormorant text-xl text-white mb-2.5 font-normal">
+                        See You on Our Big Day
+                    </div>
+                    <h1 class="font-nautigal text-7xl text-white mb-3.5 italic">
+                        Ana & Dilan
+                    </h1>
                 </div>
-                <h1 class="font-nautigal text-7xl text-white mb-3.5 italic">
-                    Ana & Dilan
-                </h1>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer class="isi-undangan hidden bg-black-500   py-6">
         <div class="container max-w-screen-xl mx-auto px-20 text-center">
