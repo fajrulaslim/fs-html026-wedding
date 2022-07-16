@@ -896,6 +896,10 @@ video {
   width: 2.5rem;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -1583,6 +1587,11 @@ video {
   .sm\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .sm\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .sm\:pt-14 {
