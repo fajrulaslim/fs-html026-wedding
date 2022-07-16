@@ -840,16 +840,12 @@ video {
   height: 5rem;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
-.h-auto {
-  height: auto;
-}
-
 .h-80 {
   height: 20rem;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .w-full {
@@ -1037,10 +1033,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-50 {
-  border-radius: 50px;
 }
 
 .border-2 {
@@ -1261,19 +1253,9 @@ video {
   line-height: 2.5rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
 }
 
 .font-normal {
@@ -1518,12 +1500,12 @@ video {
     height: 5rem;
   }
 
-  .sm\:h-12 {
-    height: 3rem;
-  }
-
   .sm\:h-screen {
     height: 100vh;
+  }
+
+  .sm\:h-12 {
+    height: 3rem;
   }
 
   .sm\:w-\[300px\] {
@@ -1655,14 +1637,14 @@ video {
     line-height: 1;
   }
 
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:leading-10 {
@@ -1679,14 +1661,6 @@ video {
 
   .sm\:opacity-40 {
     opacity: 0.4;
-  }
-
-  .file\:sm\:h-screen::-webkit-file-upload-button {
-    height: 100vh;
-  }
-
-  .file\:sm\:h-screen::file-selector-button {
-    height: 100vh;
   }
 }
 

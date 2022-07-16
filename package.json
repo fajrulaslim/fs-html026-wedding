@@ -15,8 +15,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "lightgallery": "^2.5.0"
-  }
+  "description": ""
 }
