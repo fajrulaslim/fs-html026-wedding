@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -14,6 +14,13 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="fonts/fontawesome-free-6.0.0-web//css/all.min.css">
+
+    <link type="text/css" rel="stylesheet" href="css/lightgallery/lightgallery.css" />
+
+    <!-- lightgallery plugins -->
+    <link type="text/css" rel="stylesheet" href="css/lightgallery/lg-zoom.css" />
+    <link type="text/css" rel="stylesheet" href="css/lightgallery/lg-share.css" />
+    <link type="text/css" rel="stylesheet" href="css/lightgallery/lg-thumbnail.css" />
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -36,15 +43,15 @@
                 <div class="font-cormorant text-normal text-brown-500 mb-2.5 font-normal">Minggu, 3 Juli 2023</div>
                 <div class="h-40"></div>
                 <div class="font-cormorant text-normal text-brown-500 mb-2.5 font-normal">Kepada Yth</div>
-                <div class="font-cormorant text-normal text-brown-500 mb-3 font-semibold">Damar</div>
-                <button
+                <div class="font-cormorant text-normal text-brown-500 mb-5 font-semibold">Damar</div>
+                <a href="#bukaUndangan" onclick="bukaUndangan()"
                     class="font-cormorant text-button text-white bg-brown-500 py-2.5 px-7 rounded-lg border-2 border-brown-200 ring-1 ring-brown-500"><i
-                        class="fa-solid fa-envelope mr-2"></i> Buka Undangan</button>
+                        class="fa-solid fa-envelope mr-2"></i> Buka Undangan</a>
             </div>
         </div>
     </section>
 
-    <section class="bg-brown-200 pt-6 pb-10 relative">
+    <section class="isi-undangan hidden bg-brown-200 pt-6 pb-10 relative" id="bukaUndangan">
         <img src="images/background/header-top-left.png" alt="background"
             class="absolute top-0 right-0 opacity-20 w-[300px] h-[310px] -scale-x-100">
         <div class="container max-w-screen-xl mx-auto px-20 relative">
@@ -74,7 +81,7 @@
         </div>
     </section>
 
-    <section class="bg-brown-200 py-14 relative">
+    <section class="isi-undangan hidden bg-brown-200 py-14 relative">
         <div class="container max-w-screen-xl mx-auto px-20 relative">
             <div class="columns-1">
                 <div class="p-0.5 border-2 border-brown-50 rounded-50">
@@ -127,7 +134,7 @@
             class="absolute bottom-0 left-0 w-[300px] h-[310px] -scale-x-100">
     </section>
 
-    <section class="bg-brown-200 py-14 relative">
+    <section class="isi-undangan hidden bg-brown-200 py-14 relative">
         <div class="container max-w-screen-xl mx-auto px-20 relative">
             <div class="columns-1">
                 <div class="p-0.5 border-2 border-brown-50 rounded-50 bg-white">
@@ -175,7 +182,7 @@
             class="absolute top-0 left-0 w-[300px] h-[310px]">
     </section>
 
-    <section class="bg-brown-200 w-full md:h-screen flex items-center justify-center relative">
+    <section class="isi-undangan hidden bg-brown-200 w-full md:h-screen flex items-center justify-center relative">
         <div class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-center opacity-30"
             style="background-image: url(./images/background/header.jpg);"></div>
         <div class="container max-w-screen-xl mx-auto p-20 relative">
@@ -289,7 +296,7 @@
         </div>
     </section>
 
-    <section class="bg-brown-200 py-12">
+    <section class="isi-undangan hidden bg-brown-200 py-14">
         <div class="container max-w-screen-xl mx-auto px-20 ">
             <div class="bg-white rounded-3xl text-center p-5">
                 <h1 class="font-nautigal text-7xl text-brown-500 italic mb-8">Ucapan dan Doa</h1>
@@ -360,7 +367,7 @@
         </div>
     </section>
 
-    <section class="bg-brown-200 py-14">
+    <section class="isi-undangan hidden bg-brown-200 placeholder-opacity-10">
         <div class="container max-w-screen-xl mx-auto px-20">
             <div class="columns-1">
                 <div class="p-0.5 border-2 border-brown-50 rounded-50">
@@ -432,7 +439,45 @@
         </div>
     </section>
 
-    <section class="bg-brown-200 py-14">
+    <section class="isi-undangan hidden bg-brown-200 pt-10 pb-12">
+        <div class="container max-w-screen-xl mx-auto px-20">
+            <h2 class="font-nautigal text-center text-7xl text-brown-500 mb-8 italic mt-5">
+                Our Journey Starts Here
+            </h2>
+            <div class="columns-6" id="lightgallery">
+                <a href="images/gallery/Foto-Galery-1-Ana-Dilan.jpg" data-sub-html="Foto Gallery 1" class="gallery mb-4 flex relative">
+                    <img src="images/gallery/Foto-Galery-1-Ana-Dilan.jpg" alt="">
+                    <div class="overlay w-full h-full absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500"></div>
+                </a>
+                <a href="images/gallery/Foto-Galery-2-Ana-Dilan.jpg" data-sub-html="Foto Gallery 2" class="gallery mb-4 flex relative">
+                    <img src="images/gallery/Foto-Galery-2-Ana-Dilan.jpg" alt="">
+                    <div class="overlay w-full h-full absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500"></div>
+                </a>
+                <a href="images/gallery/Foto-Galery-3-Ana-Dilan.jpg" data-sub-html="Foto Gallery 3" class="gallery mb-4 flex relative">
+                    <img src="images/gallery/Foto-Galery-3-Ana-Dilan.jpg" alt="">
+                    <div class="overlay w-full h-full absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500"></div>
+                </a>
+                <a href="images/gallery/Foto-Galery-4-Ana-Dilan-scaled.jpg" data-sub-html="Foto Gallery 4" class="gallery mb-4 flex relative">
+                    <img src="images/gallery/Foto-Galery-4-Ana-Dilan-scaled.jpg" alt="">
+                    <div class="overlay w-full h-full absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500"></div>
+                </a>
+                <a href="images/gallery/Foto-Galery-5-Ana-Dilan-scaled.jpg" data-sub-html="Foto Gallery 5" class="gallery mb-4 flex relative">
+                    <img src="images/gallery/Foto-Galery-5-Ana-Dilan-scaled.jpg" alt="">
+                    <div class="overlay w-full h-full absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500"></div>
+                </a>
+                <a href="images/gallery/Foto-Galery-6-Ana-Dilan-scaled.jpg" data-sub-html="Foto Gallery 6" class="gallery mb-4 flex relative">
+                    <img src="images/gallery/Foto-Galery-6-Ana-Dilan-scaled.jpg" alt="">
+                    <div class="overlay w-full h-full absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500"></div>
+                </a>
+                <a href="images/gallery/Foto-Galery-7-Ana-Dilan-scaled.jpg" data-sub-html="Foto Gallery 7" class="gallery mb-4 flex relative">
+                    <img src="images/gallery/Foto-Galery-7-Ana-Dilan-scaled.jpg" alt="">
+                    <div class="overlay w-full h-full absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="isi-undangan hidden bg-brown-200 py-14">
         <div class="container max-w-screen-xl mx-auto px-20">
             <div class="columns-1">
                 <div class="p-0.5 border-2 border-brown-50 rounded-50">
@@ -452,7 +497,7 @@
                                 <p class="font-quicksand text-lg text-grey-200 mb-5">
                                     BSI - 5038392170 (an. Dian Fitriana Dewi)
                                 </p>
-                                <button type="button"
+                                <button type="button" onclick="copyClipboard('5038392170')"
                                     class="btn-rekening font-quicksand text-base text-white bg-brown-500 py-2.5 px-7 rounded-lg border-2 border-brown-200 ring-1 ring-brown-500 mb-2">
                                     <i class="fa-solid fa-copy mr-2"></i> Copy Number
                                 </button>
@@ -464,7 +509,7 @@
                                 <p class="font-quicksand text-lg text-grey-200 mb-5">
                                     BCA - 2220809539 (an. Aldilan Noorman Sissandy)
                                 </p>
-                                <button type="button"
+                                <button type="button" onclick="copyClipboard('2220809539')"
                                     class="btn-rekening font-quicksand text-base text-white bg-brown-500 py-2.5 px-7 rounded-lg border-2 border-brown-200 ring-1 ring-brown-500 mb-2">
                                     <i class="fa-solid fa-copy mr-2"></i> Copy Number
                                 </button>
@@ -479,7 +524,7 @@
         </div>
     </section>
 
-    <section class="w-full h-screen flex items-end justify-center relative bg-no-repeat bg-cover bg-center"
+    <section class="isi-undangan hidden w-full h-screen flex items-end justify-center relative bg-no-repeat bg-cover bg-center"
         style="background-image: url(./images/photos/Foto-Closing-Ana-Dilan.jpg);">
         <div class="absolute top-0 left-0 w-full h-screen opacity-50"
             style="background-image: linear-gradient(180deg, #FFFFFF00 0%, #171717 100%);"></div>
@@ -495,7 +540,7 @@
         </div>
     </section>
 
-    <footer class="bg-black-500 py-6">
+    <footer class="isi-undangan hidden bg-black-500   py-6">
         <div class="container max-w-screen-xl mx-auto px-20 text-center">
             <img src="images/logo.png" alt="" class="w-24 mx-auto mb-4">
             <div class="flex justify-center">
@@ -520,8 +565,29 @@
     </button>
 
     <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/lightgallery/lightgallery.min.js"></script>
+    <script src="./js/lightgallery/lg-zoom.min.js"></script>
+    <script src="./js/lightgallery/lg-share.min.js"></script>
+    <script src="./js/lightgallery/lg-thumbnail.min.js"></script>
 
     <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery'), {
+            plugins: [lgZoom, lgThumbnail, lgShare],
+            speed: 500,
+            thumbnail: false,
+        });
+    </script>
+
+    <script type="text/javascript">
+        // BUKA UNDANGAN
+        const isiUndangan = document.querySelectorAll('.isi-undangan')
+        function bukaUndangan() {
+            setAudio()
+            isiUndangan.forEach(item => {
+                item.classList.remove('hidden')
+            })
+        }
+
         // COPIED REKENING
         const btnWedding = document.querySelector('.btn-wedding-gift')
         btnWedding.addEventListener('click', function () {
@@ -534,6 +600,9 @@
                 item.nextElementSibling.classList.remove('invisible')
             })
         })
+        function copyClipboard(Text) {
+            navigator.clipboard.writeText(Text)
+        }
 
 
         // COUNTDOWN
